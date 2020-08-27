@@ -1,9 +1,12 @@
 import pandas as pd
 import numpy as np
 import preprocess
+import sklearn
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
+
+lemm = preprocess(df['questions'])
 model = TfidfVectorizer()
 tfidf = model.fit_transform(lemm).toarray()
 
