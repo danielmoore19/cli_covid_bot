@@ -32,5 +32,5 @@ def preprocess(docs):
 
   return prepd
 
-df = pd.read_csv('https://https://raw.githubusercontent.com/danielmoore19/cli_covid_bot/master/covid_df.csv?token=AMNBPP6KOWTXKUNOYIKWH5K7I7WMG')
+df = pd.read_csv('https://raw.githubusercontent.com/danielmoore19/cli_covid_bot/master/covid_df.csv?token=AMNBPP6KOWTXKUNOYIKWH5K7I7WMG')
 lemm = preprocess(df['questions'])
