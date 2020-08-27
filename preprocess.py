@@ -1,3 +1,4 @@
+import pandas as pd
 import nltk
 from nltk.corpus import wordnet
 from nltk.stem.wordnet import WordNetLemmatizer
@@ -31,5 +32,5 @@ def preprocess(docs):
 
   return prepd
 
-df = pd.read_csv('https://raw.githubusercontent.com/danielmoore19/COVID-Chat-Bot/master/covid_data/covid_df.csv')
+df = pd.read_csv('https://https://raw.githubusercontent.com/danielmoore19/cli_covid_bot/master/covid_df.csv?token=AMNBPP6KOWTXKUNOYIKWH5K7I7WMG')
 lemm = preprocess(df['questions'])
